@@ -15,10 +15,11 @@
 	3.5 Header - Burger
 4. Home
 5. Menu
-6. Checkout
-7. Options
-8. Newsletter
-9. Footer
+6. Products
+7. Sidebar Left
+8. Sidebar Right
+9. Newsletter
+10. Footer
 
 
 ******************************/
@@ -123,14 +124,6 @@ p a:hover::after
 {
 	opacity: 0.2;
 }
-::selection
-{
-	
-}
-p::selection
-{
-	
-}
 h1{font-size: 48px;}
 h2{font-size: 36px;}
 h3{font-size: 24px;}
@@ -143,15 +136,7 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
-h6::selection
-{
-	
-}
+
 .form-control
 {
 	color: #db5246;
@@ -245,10 +230,6 @@ section
 {
 	padding: 0px !important;
 }
-.section_title_container
-{
-
-}
 .section_subtitle
 {
 	font-size: 14px;
@@ -311,7 +292,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 120px;
-	background: #FFFFFF;
+	background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 	z-index: 100;
 	padding-left: 60px;
 	padding-right: 64px;
@@ -366,9 +347,9 @@ section
 }
 .main_nav ul li a
 {
-	font-size: 12px;
+	font-size: 25px;
 	text-transform: uppercase;
-	color: #2f2f2f;
+	color: black;
 	font-weight: 600;
 	letter-spacing: 0.2em;
 	-webkit-transition: all 200ms ease;
@@ -379,8 +360,12 @@ section
 }
 .main_nav ul li a:hover
 {
-	color: #937c6f;
+  background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 100%, #e9e9e7 100%);
+  border-radius: 100px;
+  height: 100px;
+  width: 150px;
 }
+
 
 /*********************************
 3.3 Header - Search
@@ -796,6 +781,7 @@ section
 	font-weight: 600 !important;
 	color: #232323 !important;
 	cursor: pointer;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 .checkout_comment
 {
